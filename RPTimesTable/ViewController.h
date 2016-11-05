@@ -8,7 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+{
+    
+        CGFloat HeightOfScreen;
+        CGFloat WidthOfScreen;
+        UITextField *MyNumberTextField;
+        UITextField *LimitOfTextField;
+        UIButton *CalculateButton;
+        UIView *backview;
+        UITableView *mytableview;
+        NSMutableArray *myMutableArray;
+}
+
 
 
 @end
